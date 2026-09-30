@@ -43,7 +43,7 @@ function deploy_package ()
 
 	# Is it recent?
 		
-	if [[ ! -z "$last_update_timestamp" ]] && [[ ! "$last_update_timestamp" > "$last_ver_tstamp" ]]; then
+	if [[ ! -z "$last_update_timestamp" ]] && [[ ! "$last_ver_tstamp" > "$last_update_timestamp" ]]; then
   	printf "\n\tPackage '%s' time %s is not newer than last update time %s, skipping deployment\n" \
   		"$package_id" "$last_ver_tstamp" "$last_update_timestamp"
   	return 
