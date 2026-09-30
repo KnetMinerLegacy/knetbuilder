@@ -14,8 +14,10 @@ on:
       #
       NEW_RELEASE_VER:
         description: "New Release Version"
+        type: string
         required: false
       NEW_SNAPSHOT_VER:
+        type: string
         description: "New Snapshot Version"
         required: false
     
