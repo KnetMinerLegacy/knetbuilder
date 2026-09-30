@@ -1,16 +1,18 @@
 # Revision History
 
-*This file was last reviewed on 2025-06-18*. **Please, keep this note up to date**.
+*This file was last reviewed on 2026-09-30*. **Please, keep this note up to date**.
 
 ## 7.0.2-SNAPSHOT
 * **IMPORTANT**: RDF Exporter and components relying on URI generation for
   concepts and relations: URIs are now built using the ONDEX internal integer ID.
 * Neo4j exporter: ondexId added to the indexes.
-* Migration to JDK 21. **Older JDK not supported anymore**
+* Migration to JDK 25. **Older JDK not supported anymore**
 * Various dependencies upgraded:
   * java2rdf (implying Jena for the RDF exporter)
   * rdf2neo
   * jutils
+* OWL fix: recent Jena wants inferred classes found via transitive closure to be declared (see `OWLInfMapper`)
+
 
 ## 7.0.1
 * Various dependencies upgraded.
